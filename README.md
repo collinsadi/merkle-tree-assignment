@@ -2,22 +2,6 @@
 
 This project implements a Merkle-based airdrop system using an ERC20 token. It includes a Hardhat setup for deploying the smart contract, a TypeScript script for generating the Merkle tree and proofs, and a Solidity contract for managing the airdrop.
 
-## Table of Contents
-
-- [Prerequisites](#prerequisites)
-- [Project Setup](#project-setup)
-- [Running the Merkle Script](#running-the-merkle-script)
-- [Deploying the Smart Contract](#deploying-the-smart-contract)
-- [Generating Merkle Proofs](#generating-merkle-proofs)
-- [Interacting with the Contract](#interacting-with-the-contract)
-- [Troubleshooting](#troubleshooting)
-
-## Prerequisites
-
-- Node.js (v16+ recommended)
-- npm or Yarn
-- Git
-
 ## Project Setup
 
 1. Clone the repository:
@@ -169,11 +153,3 @@ main().catch((error) => {
    ```bash
    npx hardhat run scripts/claim.ts --network sepolia
    ```
-
-## Troubleshooting
-
-- If you encounter issues with gas prices, try adjusting the gas settings in your Hardhat config or transaction options.
-- Ensure your `.env` file is properly configured and not committed to version control.
-- If you're having trouble with the Merkle proof verification, double-check that the proof generation in `merkle.ts` matches the verification logic in the smart contract.
-
-For more detailed information on specific components, refer to the inline comments in the respective files.
